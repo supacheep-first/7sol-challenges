@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v5.29.3
-// source: summary/summary.proto
+// source: summary.proto
 
 package summary
 
@@ -117,5 +117,5 @@ var SummaryService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "summary/summary.proto",
+	Metadata: "summary.proto",
 }
