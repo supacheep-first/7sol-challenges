@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package summary;
+
+option go_package = "proto/summary";
+
+message SummaryRequest {
+  string text = 1;
+}
+
+message SummaryResponse {
+  map<string, int32> word_count = 1; 
+}
+
+service SummaryService {
+  rpc GetSummary(SummaryRequest) returns (SummaryResponse);
+}
